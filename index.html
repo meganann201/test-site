@@ -1,26 +1,71 @@
 <HMTL>
     <HEAD>
         <TITLE>Test Site</TITLE>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </HEAD>
     <BODY>
-        <h1>This is a test site</h1>
-        <script>
-            // This will initiate Upscope connection. It's important it is added to all pages, even when the user is not logged in.
-            (function(w, u, d){var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};var l = function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://code.upscope.xyz/CBTXV9rJw6.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(typeof u!=="function"){w.Upscope=i;l();}})(window, window.Upscope, document);
-            
-            Upscope('init');
-            </script>
-            
+          
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Upscope Tuturial</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="button.html">Buttons</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link" href="settings.html" role="button">
+                            Settings
+                          </a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+                  <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            
+                        </div>
+                        <div class="col">
+                            <h3 class="text-center">Welcome to your Upscope Tuturial 💡</h3>
+                        </div>
+                        <div class="col">
+                            
+                        </div>
+                    </div>
+                  </div>
+                  
+           <!-- Start of d3v-upscope Zendesk Widget script -->
+            <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f0127731-3c1d-4b30-bce8-462f79a8ecdb"> </script>
+           <!-- End of d3v-upscope Zendesk Widget script -->
             <script>
-            // If the user is logged in, optionally identify them with the following method.
-            // You can call Upscope('updateConnection', {}); at any time.
-            Upscope('updateConnection', {
-              // Set the user ID below. If you don't have one, set to undefined.
-              uniqueId: "USER UNIQUE ID",
-            
-              // Set the user name or email below (e.g. ["John Smith", "john.smith@acme.com"]).
-              identities: ["list", "of", "identities", "here"]
-            });
-            </script>
+                // This will initiate Upscope connection. It's important it is added to all pages, even when the user is not logged in.
+                (function(w, u, d){var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};var l = function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://code.upscope.io/KEbQGws2Wn.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(typeof u!=="function"){w.Upscope=i;l();}})(window, window.Upscope, document);
+                
+                Upscope('init');
+                </script>
+                
+                <script>
+                // If the user is logged in, optionally identify them with the following method.
+                // You can call Upscope('updateConnection', {}); at any time.
+                Upscope('updateConnection', {
+                  // Set the user ID below. If you don't have one, set to undefined.
+                  uniqueId: "USER UNIQUE ID",
+                
+                  // Set the user name or email below (e.g. ["John Smith", "john.smith@acme.com"]).
+                  identities: ["list", "of", "identities", "here"]
+                });
+                </script>
     </BODY>
 </HMTL>

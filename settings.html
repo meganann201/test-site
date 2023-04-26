@@ -2,7 +2,7 @@
     <HEAD>
         <TITLE>Test Site</TITLE>
         <link rel="stylesheet" href="style.css">
-        <script>!function(){var e=window.Cohere=window.Cohere||[];if(e.invoked)console.error("Tried to load Cohere twice");else{e.invoked=!0,e.snippet="0.2",e.methods=["init","identify","stop","showCode","getSessionUrl","makeCall","addCallStatusListener","removeCallStatusListener","widget"],e.methods.forEach(function(o){e[o]=function(){var t=Array.prototype.slice.call(arguments);t.unshift(o),e.push(t)}});var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src="https://static.cohere.so/main.js",o.crossOrigin="anonymous";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(o,t)}}();window.Cohere.init("KeCQH4BsRi86yM8xPrprSRXg");</script>
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </HEAD>
     <BODY>
@@ -94,7 +94,24 @@
                         <label class="custom-control-label" for="customCheck1">I accept the terms and conditions.</label>
                       </div>
                 </form>
-              
+                <script>
+                  // This will initiate Upscope connection. It's important it is added to all pages, even when the user is not logged in.
+                  (function(w, u, d){var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};var l = function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://code.upscope.io/KEbQGws2Wn.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(typeof u!=="function"){w.Upscope=i;l();}})(window, window.Upscope, document);
+                  
+                  Upscope('init');
+                  </script>
+                  
+                  <script>
+                  // If the user is logged in, optionally identify them with the following method.
+                  // You can call Upscope('updateConnection', {}); at any time.
+                  Upscope('updateConnection', {
+                    // Set the user ID below. If you don't have one, set to undefined.
+                    uniqueId: "USER UNIQUE ID",
+                  
+                    // Set the user name or email below (e.g. ["John Smith", "john.smith@acme.com"]).
+                    identities: ["list", "of", "identities", "here"]
+                  });
+                  </script>
 
 
 

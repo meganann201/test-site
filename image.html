@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dog Image</title>
+  </head>
+  <body>
+    <h1>Cute Dog Image</h1>
+    <img src="https://images.pexels.com/photos/4608236/pexels-photo-4608236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Cute dog">
+    <script>
+        // This will initiate Upscope connection. It's important it is added to all pages, even when the user is not logged in.
+        (function(w, u, d){var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};var l = function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://code.upscope.io/KEbQGws2Wn.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(typeof u!=="function"){w.Upscope=i;l();}})(window, window.Upscope, document);
+        
+        Upscope('init');
+        </script>
+        
+        <script>
+        // If the user is logged in, optionally identify them with the following method.
+        // You can call Upscope('updateConnection', {}); at any time.
+        Upscope('updateConnection', {
+          // Set the user ID below. If you don't have one, set to undefined.
+          uniqueId: "USER UNIQUE ID",
+        
+          // Set the user name or email below (e.g. ["John Smith", "john.smith@acme.com"]).
+          identities: ["list", "of", "identities", "here"]
+        });
+        </script>
+</body>
+</html>

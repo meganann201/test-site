@@ -1,0 +1,122 @@
+<HMTL>
+    <script
+src='//eu.fw-cdn.com/12291958/462218.js'
+chat='true'>
+</script>
+    <HEAD>
+        <TITLE>Test Site</TITLE>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </HEAD>
+    <BODY>
+          
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Upscope Tuturial</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="button.html">Buttons</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link" href="settings.html" role="button">
+                            Settings
+                          </a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+                
+            
+                   <form class="w-75 ml-5 pl-5">
+                    <div class="form-group mt-4">
+                        <h2>Settings</h2>
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Name</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Email</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword5">Password</label>
+                        <input type="password" id="inputPassword5" class="form-control no-upscope" aria-describedby="passwordHelpBlock">
+                        <small id="passwordHelpBlock" class="form-text text-muted">
+                            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                        </small>
+                      </div>
+                  </form>
+
+                <form class="w-75 ml-5 mt-4 pl-5">
+                    <div class="form-group mt-4">
+                        <h3>Personal Information</h3>
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Social Security Number</label>
+                      <input type="text" class="form-control no-upscope" id="formGroupExampleInput">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Tax Code</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2">
+                    </div>
+                </form>
+
+                <form class="w-75 ml-5 mt-4 pl-5">
+                    <div class="form-group mt-4">
+                        <h3>Options</h3>
+                    </div>
+                    <div>
+                    <p class="font-weight-bold">Preferred Location</p>
+                    <select class="custom-select">
+                        <option selected>Miami</option>
+                        <option value="1">New York</option>
+                        <option value="2">Los Angeles</option>
+                        <option value="3">Scottsdale</option>
+                      </select>
+                    </div>
+                </form>
+
+                <form class="w-75 ml-5 mt-4 pl-5">
+                    <div class="form-group mt-4">
+                        <h3>Terms</h3>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">I accept the terms and conditions.</label>
+                      </div>
+                </form>
+
+           
+           <script>
+            // This will initiate Upscope connection. It's important it is added to all pages, even when the user is not logged in.
+            (function(w, u, d){var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};var l = function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://code.upscope.io/KEbQGws2Wn.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(typeof u!=="function"){w.Upscope=i;l();}})(window, window.Upscope, document);
+            
+            Upscope('init');
+            </script>
+            
+            <script>
+            // If the user is logged in, optionally identify them with the following method.
+            // You can call Upscope('updateConnection', {}); at any time.
+            Upscope('updateConnection', {
+              // Set the user ID below. If you don't have one, set to undefined.
+              uniqueId: "USER UNIQUE ID",
+            
+              // Set the user name or email below (e.g. ["John Smith", "john.smith@acme.com"]).
+              identities: ["list", "of", "identities", "here"]
+            });
+            </script>
+    </BODY>
+</HMTL>

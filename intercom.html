@@ -98,14 +98,18 @@
               <script>
                 window.intercomSettings = {
                   api_base: "https://api-iam.intercom.io",
-                  app_id: "jjuq5mvv"
+                  app_id: "bjs6hrog",
+                  name: "<%= current_user.name %>", // Full name
+                  email: "<%= current_user.email %>", // Email address
+                  created_at: "<%= current_user.created_at.to_i %>" // Signup date as a Unix timestamp
                 };
               </script>
               
               <script>
-              // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/jjuq5mvv'
-              (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/jjuq5mvv';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+              // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/bjs6hrog'
+              (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/bjs6hrog';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
               </script>
+
          <script>
           // This will initiate Upscope connection. It's important it is added to all pages, even when the user is not logged in.
           (function(w, u, d){var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};var l = function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://code.upscope.io/KEbQGws2Wn.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(typeof u!=="function"){w.Upscope=i;l();}})(window, window.Upscope, document);
